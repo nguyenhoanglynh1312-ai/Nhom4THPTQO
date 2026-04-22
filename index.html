@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
     <title>Du lịch Hà Nội</title>
     <style>
-        body {margin:0;font-family:Arial;background:#f0f2f5;}
+        body {margin:0;font-family:Arial, sans-serif;background:#f0f2f5;}
         header {
             background: linear-gradient(90deg,#4facfe,#00f2fe);
             color:white;text-align:center;padding:30px;
@@ -12,11 +13,11 @@
         nav a {margin:0 15px;text-decoration:none;font-weight:bold;color:#333;}
         nav a:hover {color:#4facfe;}
         
-        /* Căn giữa toàn bộ nội dung chính */
+        /* Căn giữa toàn bộ nội dung */
         .main-content {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Căn giữa theo chiều ngang */
+            align-items: center; 
             padding: 20px;
         }
 
@@ -24,8 +25,8 @@
             background:white;
             margin:20px 0;
             padding:25px;
-            width:100%;
-            max-width:700px; /* Độ rộng tối đa của khung */
+            width:90%;
+            max-width:700px; 
             border-radius:15px;
             box-shadow:0 5px 15px rgba(0,0,0,0.1);
             text-align:center;
@@ -36,18 +37,16 @@
             max-width:600px;
             height:auto;
             border-radius:10px;
-            transition: transform 0.3s;
-        }
-        
-        img:hover {
-            transform: scale(1.02); /* Hiệu ứng phóng to nhẹ khi di chuột */
+            display: block;
+            margin: 0 auto;
         }
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            padding-bottom: 56.25%; 
             height: 0;
             overflow: hidden;
+            margin-top: 15px;
         }
 
         .video-container iframe {
@@ -77,20 +76,21 @@
 </nav>
 
 <div class="main-content">
+    
     <div class="card">
         <h2>Cảnh đẹp Hà Nội</h2>
-        <a href="http://googleusercontent.com/image_collection/image_retrieval/78756580376360401_0" target="_blank">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/78756580376360401_0" alt="Hồ Hoàn Kiếm">
+        <p>Hồ Hoàn Kiếm - Trái tim của Thủ đô</p>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hồ_Gươm_về_đêm.jpg/1024px-Hồ_Gươm_về_đêm.jpg" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hồ_Gươm_về_đêm.jpg/1024px-Hồ_Gươm_về_đêm.jpg" alt="Hồ Hoàn Kiếm">
         </a>
-        <p><i>Hồ Hoàn Kiếm - Trái tim của Thủ đô</i></p>
     </div>
 
     <div class="card">
         <h2>Ẩm thực Hà Nội</h2>
-        <a href="http://googleusercontent.com/image_collection/image_retrieval/5663253852874792220_0" target="_blank">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/5663253852874792220_0" alt="Ẩm thực Hà Nội">
+        <p>Phở Hà Nội - Tinh hoa ẩm thực Việt</p>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Pho_Hanoi_Street_Scene.jpg/1024px-Pho_Hanoi_Street_Scene.jpg" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Pho_Hanoi_Street_Scene.jpg/1024px-Pho_Hanoi_Street_Scene.jpg" alt="Phở Hà Nội">
         </a>
-        <p><i>Tinh hoa ẩm thực đường phố</i></p>
     </div>
 
     <div class="card">
@@ -100,11 +100,11 @@
                 src="https://www.youtube.com/embed/aPYAUdPa7V4" 
                 title="YouTube video player" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
             </iframe>
         </div>
     </div>
+
 </div>
 
 <footer>
