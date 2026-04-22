@@ -2,70 +2,44 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Du lịch Hà Nội</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Hà Nội - Nhóm 4</title>
     <style>
-        body {margin:0;font-family:Arial;background:#f0f2f5;}
+        body {margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f0f2f5; color: #333;}
         header {
             background: linear-gradient(90deg,#4facfe,#00f2fe);
-            color:white;text-align:center;padding:30px;
+            color:white; text-align:center; padding:40px 20px;
         }
-        nav {background:white;padding:15px;text-align:center; border-bottom: 1px solid #ddd;}
-        nav a {margin:0 15px;text-decoration:none;font-weight:bold;color:#333;}
+        nav {background:white; padding:15px; text-align:center; position: sticky; top:0; z-index:100; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        nav a {margin:0 15px; text-decoration:none; font-weight:bold; color:#333; transition: 0.3s;}
         nav a:hover {color:#4facfe;}
         
         .main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            padding: 20px;
+            display: flex; flex-direction: column; align-items: center; padding: 20px;
         }
 
         .card {
-            background:white;
-            margin:20px 0;
-            padding:25px;
-            width:90%;
-            max-width:700px; 
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-            text-align:center;
+            background:white; margin:20px 0; padding:20px; width:95%; max-width:700px; 
+            border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); text-align:center;
         }
 
-        img {
-            width:100%;
-            max-width:600px;
-            height:auto;
-            border-radius:10px;
-            display: block;
-            margin: 0 auto;
+        h2 { color: #2c3e50; margin-bottom: 15px; }
+
+        /* Quan trọng: Đảm bảo ảnh luôn hiện */
+        .hanoi-img {
+            width:100%; max-width:600px; height:auto; border-radius:10px;
+            display: block; margin: 10px auto;
+            background: #eee; /* Hiện nền xám nếu mạng yếu */
         }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-            margin-top: 15px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
-
-        footer {background:#333;color:white;text-align:center;padding:20px; margin-top: 40px;}
+        footer {background:#333; color:white; text-align:center; padding:20px; margin-top: 40px;}
     </style>
 </head>
-
 <body>
 
 <header>
-    <h1>KHÁM PHÁ ẨM THỰC HÀ NỘI</h1>
-    <p>Nhóm 4 - THPT Quốc Oai</p>
+    <h1>KHÁM PHÁ HÀ NỘI</h1>
+    <p>Nhóm 4 - THPT Quốc Oai | 2026</p>
 </header>
 
 <nav>
@@ -74,34 +48,36 @@
     <a href="contact.html">Liên hệ</a>
 </nav>
 
-<div class="card">
-        <h2>Hồ Hoàn Kiếm (Hồ Gươm)</h2>
-        <p>Biểu tượng thiêng liêng của Thủ đô</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hồ_Gươm_về_đêm.jpg/1024px-Hồ_Gươm_về_đêm.jpg" alt="Hồ Gươm">
+<div class="main-content">
+    
+    <div class="card">
+        <h2>Hồ Hoàn Kiếm</h2>
+        <img class="hanoi-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Ho Guom">
+        <p>Vẻ đẹp yên bình giữa lòng thủ đô.</p>
     </div>
 
     <div class="card">
         <h2>Phở Hà Nội</h2>
-        <p>Tinh hoa ẩm thực Việt Nam</p>
-        <img src="https://cdn.pixabay.com/photo/2016/11/13/12/52/hanoi-1820935_1280.jpg" alt="Phở Hà Nội">
+        <img class="hanoi-img" src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80" alt="Pho Hanoi">
+        <p>Món ăn linh hồn của người Việt.</p>
     </div>
 
     <div class="card">
-        <h2>Video Khám Phá</h2>
-        <div class="video-container">
-            <iframe 
-                src="https://www.youtube.com/embed/aPYAUdPa7V4" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
-        </div>
+        <h2>Bún Chả</h2>
+        <img class="hanoi-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Vietnamese_Bun_Cha.jpg" alt="Bun Cha">
+        <p>Đặc sản nức tiếng gần xa.</p>
+    </div>
+
+    <div class="card">
+        <h2>Bánh Mì Hà Nội</h2>
+        <img class="hanoi-img" src="https://images.unsplash.com/photo-1600454021970-351eff4a6554?auto=format&fit=crop&w=800&q=80" alt="Banh Mi">
+        <p>Món ăn đường phố ngon nhất thế giới.</p>
     </div>
 
 </div>
 
 <footer>
-    <p>Nhóm 4 - 2026 | THPT Quốc Oai</p>
+    <p>&copy; 2026 Nhóm 4 - THPT Quốc Oai</p>
 </footer>
 
 </body>
