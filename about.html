@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu ẩm thực Hà Nội</title>
     <style>
-        body {font-family:Arial;margin:0;background:#f0f2f5;}
-        nav {background:white;padding:15px;text-align:center;}
-        nav a {margin:10px;text-decoration:none;font-weight:bold;color:#333;}
+        body {font-family: Arial, sans-serif; margin:0; background:#f0f2f5; color: #333;}
+        nav {background:white; padding:15px; text-align:center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;}
+        nav a {margin:0 15px; text-decoration:none; font-weight:bold; color:#333; transition: 0.3s;}
+        nav a:hover {color:#4facfe;}
+        
         .box {
             background:white;
-            padding:30px;
-            margin:30px;
-            border-radius:10px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-            line-height:1.6;
+            padding:40px;
+            margin:30px auto;
+            max-width: 900px; /* Giới hạn độ rộng để đọc dễ hơn */
+            border-radius:15px;
+            box-shadow:0 5px 25px rgba(0,0,0,0.1);
+            line-height:1.8;
         }
+
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #e67e22; border-left: 5px solid #e67e22; padding-left: 10px; margin-top: 30px; }
+
+        /* CSS ĐỂ HIỆN ẢNH ĐÂY NÈ */
+        .card {
+            background: #fff9f5;
+            margin: 25px auto;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #ffe0cc;
+            text-align: center;
+            max-width: 650px;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 10px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card p { font-style: italic; color: #666; margin-top: 5px; }
+        
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.9em; }
     </style>
 </head>
 
@@ -27,44 +60,49 @@
 
 <div class="box">
 
-<h1>Giới thiệu chung về ẩm thực Hà Nội</h1>
+    <h1>Giới thiệu chung về ẩm thực Hà Nội</h1>
 
-<p>Hà Nội – mảnh đất ngàn năm văn hiến – không chỉ nổi tiếng với lịch sử lâu đời và nhiều danh lam thắng cảnh, mà còn được biết đến như cái nôi của một nền ẩm thực tinh tế và giàu bản sắc văn hóa. Ẩm thực nơi đây không cầu kỳ xa hoa mà chú trọng đến sự hài hòa trong hương vị và cách chế biến.</p>
+    <p>Hà Nội – mảnh đất ngàn năm văn hiến – không chỉ nổi tiếng với lịch sử lâu đời và nhiều danh lam thắng cảnh, mà còn được biết đến như cái nôi của một nền ẩm thực tinh tế và giàu bản sắc văn hóa. Ẩm thực nơi đây không cầu kỳ xa hoa mà chú trọng đến sự hài hòa trong hương vị và cách chế biến.</p>
 
-<p>Ẩm thực Hà Nội được hình thành và phát triển qua hàng nghìn năm lịch sử, gắn liền với kinh thành Thăng Long. Qua thời gian, cùng với sự giao thoa văn hóa giữa các vùng miền, ẩm thực Hà Nội dần tạo nên phong cách riêng, vừa mang nét dân dã, vừa thể hiện sự thanh lịch của chốn kinh kỳ. </p>
+    <p>Ẩm thực Hà Nội được hình thành và phát triển qua hàng nghìn năm lịch sau, gắn liền với kinh thành Thăng Long. Qua thời gian, cùng với sự giao thoa văn hóa giữa các vùng miền, ẩm thực Hà Nội dần tạo nên phong cách riêng, vừa mang nét dân dã, vừa thể hiện sự thanh lịch của chốn kinh kỳ.</p>
 
-<p>Một trong những đặc trưng nổi bật của ẩm thực Hà Nội là sự cân bằng trong hương vị. Các món ăn thường không quá cay, không quá ngọt hay quá mặn mà hướng đến sự thanh nhẹ, hài hòa. Người Hà Nội coi trọng sự kết hợp giữa màu sắc, mùi vị và cách trình bày món ăn. Ẩm thực Hà Nội là sự kết hợp tinh tế 
-    giữa hương vị dân gian và nét thanh lịch cung đình, phản ánh chiều sâu văn hóa nghìn năm văn hiến. Nổi tiếng với phở, bún chả, chả cá Lã Vọng và các món quà vặt như cốm làng Vòng, ẩm thực Thủ đô không chỉ ngon miệng mà còn là một "đại sứ văn hóa" thu hút du khách quốc tế. </p>
-  <div class="card">
+    <p>Một trong những đặc trưng nổi bật của ẩm thực Hà Nội là sự cân bằng trong hương vị. Các món ăn thường không quá cay, không quá ngọt hay quá mặn mà hướng đến sự thanh nhẹ, hài hòa. Người Hà Nội coi trọng sự kết hợp giữa màu sắc, mùi vị và cách trình bày món ăn. Ẩm thực Hà Nội là sự kết hợp tinh tế giữa hương vị dân gian và nét thanh lịch cung đình, phản ánh chiều sâu văn hóa nghìn năm văn hiến. Nổi tiếng với phở, bún chả, chả cá Lã Vọng và các món quà vặt như cốm làng Vòng, ẩm thực Thủ đô không chỉ ngon miệng mà còn là một "đại sứ văn hóa" thu hút du khách quốc tế.</p>
+
+    <div class="card">
         <h2>Bún Chả Hà Nội</h2>
         <p>Hương vị đặc trưng không thể trộn lẫn</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Vietnamese_Bun_Cha.jpg" alt="Bún Chả">
     </div>
 
-<h2>Đặc điểm nổi bật</h2>
+    <h2>Đặc điểm nổi bật</h2>
 
-<p>Ẩm thực Hà Nội thể hiện sự tinh tế từ khâu lựa chọn nguyên liệu đến cách chế biến. Nguyên liệu thường đơn giản như gạo, thịt, cá và rau, nhưng phải tươi ngon và đúng mùa. Gia vị được sử dụng vừa đủ để giữ được hương vị tự nhiên của món ăn.</p>
+    <p>Ẩm thực Hà Nội thể hiện sự tinh tế từ khâu lựa chọn nguyên liệu đến cách chế biến. Nguyên liệu thường đơn giản như gạo, thịt, cá và rau, nhưng phải tươi ngon và đúng mùa. Gia vị được sử dụng vừa đủ để giữ được hương vị tự nhiên của món ăn.</p>
 
-<p>Bên cạnh đó, yếu tố mùa vụ cũng đóng vai trò quan trọng. Mỗi mùa trong năm đều có những món ăn đặc trưng riêng, tạo nên sự đa dạng và phong phú cho nền ẩm thực nơi đây.</p>
+    <p>Bên cạnh đó, yếu tố mùa vụ cũng đóng vai trò quan trọng. Mỗi mùa trong năm đều có những món ăn đặc trưng riêng, tạo nên sự đa dạng và phong phú cho nền ẩm thực nơi đây.</p>
 
-<h2>Các món ăn tiêu biểu</h2>
+    <h2>Các món ăn tiêu biểu</h2>
 
-<p>Khi nhắc đến ẩm thực Hà Nội, không thể không kể đến phở – món ăn được xem là biểu tượng của ẩm thực Việt Nam. Ngoài ra còn có bún chả, bún thang, chả cá, bánh cuốn Thanh Trì và nhiều món ăn đặc sắc khác.</p>
+    <p>Khi nhắc đến ẩm thực Hà Nội, không thể không kể đến phở – món ăn được xem là biểu tượng của ẩm thực Việt Nam. Ngoài ra còn có bún chả, bún thang, chả cá, bánh cuốn Thanh Trì và nhiều món ăn đặc sắc khác.</p>
 
-<p>Không chỉ có các món chính, Hà Nội còn nổi tiếng với các món ăn vặt như ô mai, cốm, chè và nhiều loại bánh truyền thống, tạo nên nét đặc trưng riêng trong văn hóa ẩm thực.</p>
+    <p>Không chỉ có các món chính, Hà Nội còn nổi tiếng với các món ăn vặt như ô mai, cốm, chè và nhiều loại bánh truyền thống, tạo nên nét đặc trưng riêng trong văn hóa ẩm thực.</p>
 
-<h2>Giá trị văn hóa</h2>
-   <div class="card">
+    <h2>Giá trị văn hóa</h2>
+
+    <div class="card">
         <h2>Bánh Mì Hà Nội</h2>
         <p>Món ăn đường phố nổi tiếng thế giới</p>
         <img src="https://cdn.pixabay.com/photo/2020/09/23/06/17/baguette-5595304_1280.jpg" alt="Bánh Mì">
     </div>
 
-<p>Đối với người Hà Nội, ăn uống không chỉ để no mà còn là một nghệ thuật thưởng thức. Văn hóa ẩm thực thể hiện qua cách bày biện, cách ăn uống và cả cách ứng xử trong bữa ăn.</p>
+    <p>Đối với người Hà Nội, ăn uống không chỉ để no mà còn là một nghệ thuật thưởng thức. Văn hóa ẩm thực thể hiện qua cách bày biện, cách ăn uống và cả cách ứng xử trong bữa ăn.</p>
 
-<p>Ngày nay, dù có nhiều thay đổi do sự phát triển của xã hội hiện đại, nhưng những giá trị truyền thống của ẩm thực Hà Nội vẫn được gìn giữ và phát huy, góp phần làm nên bản sắc văn hóa độc đáo của Thủ đô.</p>
+    <p>Ngày nay, dù có nhiều thay đổi do sự phát triển của xã hội hiện đại, nhưng những giá trị truyền thống của ẩm thực Hà Nội vẫn được gìn giữ và phát huy, góp phần làm nên bản sắc văn hóa độc đáo của Thủ đô.</p>
 
 </div>
+
+<footer>
+    <p>Nhóm 4 - 2026 | THPT Quốc Oai</p>
+</footer>
 
 </body>
 </html>
